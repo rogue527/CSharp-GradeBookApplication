@@ -22,6 +22,9 @@ namespace GradeBook.GradeBooks
 
             if (averageGrade >= grades[threshold - 1])
                 return 'A';
+            if (averageGrade >= grades[(threshold * 2) - 1])
+                return 'B';
+                
             return 'F';
         }
     }
